@@ -1,0 +1,2 @@
+# DjangoTalk
+ DjangoTalk is a chat application built using Django, React, and web sockets. The application allows users to enter different chat rooms and chat with other users in the same room. The primary objective of this project is to learn and demonstrate the use of Django, React, and web sockets for real-time communication. The project will include features such as authentication, chat room creation, and message persistence. This project serves as a platform to practice and improve your skills in web development using modern frameworks and tools.
