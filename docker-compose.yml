@@ -1,0 +1,20 @@
+version: '3.8'
+
+
+networks:
+    frontend:
+        name: frontend
+    backend:
+        name: backend
+        
+services:
+  djangotalk:
+    build:
+      context: .
+      dockerfile: ./docker/django/Dockerfile
+    command: python3 djangotalk/manage.py runserver 0.0.0.0:8000
+    # command: bash -c "tail -f /dev/null"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
